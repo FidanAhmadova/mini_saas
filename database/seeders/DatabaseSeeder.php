@@ -13,6 +13,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        // Create plans first
+        $this->call(PlansSeeder::class);
+
         // User::factory(10)->create();
 
         User::factory()->create([
