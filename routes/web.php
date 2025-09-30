@@ -21,6 +21,11 @@ Route::get('/debug', function () {
     return view('debug');
 });
 
+// Simple test səhifəsi
+Route::get('/simple-test', function () {
+    return view('simple-test');
+});
+
 // Test registration page
 Route::get('/test-register', function () {
     return view('test-register');
