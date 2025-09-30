@@ -16,6 +16,11 @@ Route::get('/test-dropdown', function () {
     return view('test-dropdown');
 });
 
+// Debug səhifəsi
+Route::get('/debug', function () {
+    return view('debug');
+});
+
 // Test registration page
 Route::get('/test-register', function () {
     return view('test-register');

@@ -1,5 +1,8 @@
 import './bootstrap';
 
-// Alpine.js artıq bootstrap.js-də import edilib
-// Alpine.start() burada çağırılır
-window.Alpine.start();
+// Alpine.js start et
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.Alpine) {
+        window.Alpine.start();
+    }
+});
